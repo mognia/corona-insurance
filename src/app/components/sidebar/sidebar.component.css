@@ -1,0 +1,7 @@
+.walletIdBox{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.walletBox{
+    text-align: right;
+}
