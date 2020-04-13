@@ -1,45 +1,132 @@
 <div class="main-content">
-  <div class="container-fluid">
-      <div class="row justify-content-sm-center">
-          <div class="col-6 col-sm-4">
-              <div class="card card-stats">
-                  <div class="card-header card-header-success card-header-icon">
-                      <div class="card-icon d-none d-sm-block">
-                          <i class="material-icons">add_shopping_cart</i>
-                      </div>
-                      <p class="card-category">هزینه ثبت نام</p>
-                      <h3 class="card-title" dir="rtl">10,000
-                          <small>تومان</small>
-                      </h3>
-                  </div>
-                  <div class="card-footer" dir="rtl">
-                      <div class="stats text-right">
-                          <p class="mb-0">این هزینه بابت ثبت اطلاعات شما روی بلاکچین است</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-6 col-sm-4">
-              <div class="card card-stats">
-                  <div class="card-header card-header-success card-header-icon">
-                      <div class="card-icon d-none d-sm-block">
-                          <i class="material-icons">local_hospital</i>
-                      </div>
-                      <p class="card-category">حداکثر بیمه پرداختی</p>
-                      <h3 class="card-title" dir="rtl">10,000,000
-                          <small>تومان</small>
-                      </h3>
-                  </div>
-                  <div class="card-footer" dir="rtl">
-                      <div class="stats text-right">
-                          <p class="mb-0">درصورت دریافت امتیاز کامل از پزشکان ما</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
+    <div class="container-fluid">
+        <div class="row justify-content-sm-between">
+            <div class="col-sm-4">
+                <div class="card mt-0" #responseCard *ngIf="isSubmitedForm">
+                    <div class="w-100 d-flex m-2 flex-column align-items-center justify-content-center">
+                        <h6>لطفا کمی صبر کنید</h6>
+                        <small>درحال دریافت پاسخ از بلاکچین</small>
+                        <div class="spinner-grow my-3 text-success" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
-      </div>
+            <div class="col-6 col-sm-4">
+                <div class="card m-0 card-stats">
+                    <div class="card-header card-header-success card-header-icon">
+                        <div class="card-icon d-none d-sm-block">
+                            <i class="material-icons">add_shopping_cart</i>
+                        </div>
+                        <p class="card-category">هزینه ثبت نام</p>
+                        <h3 class="card-title" dir="rtl">10,000
+                            <small>تومان</small>
+                        </h3>
+                    </div>
+                    <div class="card-footer" dir="rtl">
+                        <div class="stats text-right">
+                            <p class="mb-0">این هزینه بابت ثبت اطلاعات شما روی بلاکچین است</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4">
+                <div class="card m-0 card-stats">
+                    <div class="card-header card-header-success card-header-icon">
+                        <div class="card-icon d-none d-sm-block">
+                            <i class="material-icons">local_hospital</i>
+                        </div>
+                        <p class="card-category">حداکثر بیمه پرداختی</p>
+                        <h3 class="card-title" dir="rtl">10,000,000
+                            <small>تومان</small>
+                        </h3>
+                    </div>
+                    <div class="card-footer" dir="rtl">
+                        <div class="stats text-right">
+                            <p class="mb-0">درصورت دریافت امتیاز کامل از پزشکان ما</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  </div>
+
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-12 col-sm-8">
+
+                <div class="card my-3" dir="rtl">
+                    <div class="card-body text-right">
+                        <h5>ثبت درخواست توکن</h5>
+                        <p>با وارد کردن اطلاعات خود و سپس فشردن دکمه ثبت درخواست شما برای خرید توکن و حق بیمه ارسال
+                            خواهد شد و حداکثر تا 1 دقیقه بعد نتیجه در همین صفحه اعلام خواهد شد لطفا تا دریافت نتیجه این
+                            صفحه را نبندید
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-md-8">
+                <div class="card" dir="rtl">
+                    <div class="card-header text-right card-header-success">
+                        <h4 class="card-title">ارسال مشخصات</h4>
+                        <p class="card-category">از صحت اطلاعات وارد شده اطمینان حاصل نمایید</p>
+                    </div>
+                    <div class="card-body">
+                        <form [formGroup]="profileForm" (ngSubmit)="submitProfile(responseCard)">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width" dir="rtl">
+                                        <input matInput formControlName="firstName" placeholder="نام">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width" dir="rtl">
+                                        <input matInput formControlName="lastName" placeholder="نام خانوادگی">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width" dir="rtl">
+                                        <input matInput formControlName="phoneNumber" placeholder="شماره موبایل">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width" dir="rtl">
+                                        <input matInput formControlName="nationalId" placeholder="شماره ملی">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width" dir="rtl">
+                                        <input matInput formControlName="birthCertificate" placeholder="شماره شناسنامه">
+                                    </mat-form-field>
+                                </div>
+
+                            </div>
+
+                            <div class="w-100 d-flex justify-content-end">
+
+                                <button mat-raised-button type="submit" class="btn btn-success pull-right">
+                                    <div class="spinner-border text-light" *ngIf="isSubmitedForm" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                    <span *ngIf="!isSubmitedForm">
+
+                                    ارسال اطلاعات
+                                    </span>
+                                </button>
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
