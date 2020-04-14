@@ -1,23 +1,13 @@
 <div class="main-content">
     <div class="container-fluid">
-        <div class="row justify-content-sm-between">
-            <div class="col-sm-4">
-                <div class="card mt-0" #responseCard *ngIf="isSubmitedForm">
-                    <div class="w-100 d-flex m-2 flex-column align-items-center justify-content-center">
-                        <h6>لطفا کمی صبر کنید</h6>
-                        <small>درحال دریافت پاسخ از بلاکچین</small>
-                        <div class="spinner-grow my-3 text-success" role="status">
-                            <span class="sr-only">Loading...</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="row justify-content-sm-end">
 
 
-            <div class="col-6 col-sm-4">
-                <div class="card m-0 card-stats">
+
+            <div class="col-12 col-sm-4">
+                <div class="card  card-stats">
                     <div class="card-header card-header-success card-header-icon">
-                        <div class="card-icon d-none d-sm-block">
+                        <div class="card-icon">
                             <i class="material-icons">add_shopping_cart</i>
                         </div>
                         <p class="card-category">هزینه ثبت نام</p>
@@ -27,15 +17,15 @@
                     </div>
                     <div class="card-footer" dir="rtl">
                         <div class="stats text-right">
-                            <p class="mb-0">این هزینه بابت ثبت اطلاعات شما روی بلاکچین است</p>
+                            <small class="mb-0">این هزینه بابت ثبت اطلاعات شما روی بلاکچین است</small>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-sm-4">
-                <div class="card m-0 card-stats">
+            <div class="col-12 col-sm-4">
+                <div class="card  card-stats">
                     <div class="card-header card-header-success card-header-icon">
-                        <div class="card-icon d-none d-sm-block">
+                        <div class="card-icon ">
                             <i class="material-icons">local_hospital</i>
                         </div>
                         <p class="card-category">حداکثر بیمه پرداختی</p>
@@ -45,7 +35,7 @@
                     </div>
                     <div class="card-footer" dir="rtl">
                         <div class="stats text-right">
-                            <p class="mb-0">درصورت دریافت امتیاز کامل از پزشکان ما</p>
+                            <small class="mb-0">درصورت دریافت امتیاز کامل از پزشکان ما</small>
                         </div>
                     </div>
                 </div>
@@ -70,7 +60,7 @@
         </div>
         <div class="row justify-content-end">
             <div class="col-md-8">
-                <div class="card" dir="rtl">
+                <div class="card profile-form" [class.show]="!isSubmitedForm" dir="rtl">
                     <div class="card-header text-right card-header-success">
                         <h4 class="card-title">ارسال مشخصات</h4>
                         <p class="card-category">از صحت اطلاعات وارد شده اطمینان حاصل نمایید</p>
@@ -123,6 +113,19 @@
 
                             <div class="clearfix"></div>
                         </form>
+                    </div>
+                </div>
+                <div class="card mt-0 response-form" [class.show]="isSubmitedForm" *ngIf="isSubmitedForm">
+                    <div class="card-header text-right card-header-success">
+                        <h4 class="card-title">پاسخ درخواست</h4>
+                        <p class="card-category">تا دریافت پاسخ شکیبا باشید</p>
+                    </div>
+                    <div class="w-100 d-flex m-2 flex-column align-items-center justify-content-center card-body">
+                        <h6>لطفا کمی صبر کنید</h6>
+                        <small>درحال دریافت پاسخ از بلاکچین</small>
+                        <div class="spinner-grow my-3 text-success" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
                     </div>
                 </div>
             </div>

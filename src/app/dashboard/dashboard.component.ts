@@ -166,7 +166,8 @@ export class DashboardComponent implements OnInit {
     submitProfile(element: HTMLElement) {
         this.isSubmitedForm = true;
         this.profileForm.disable();
-        element.scrollIntoView({behavior: 'smooth'})
+        window.scroll(0, 0)
+        // element.scrollIntoView({behavior: 'smooth'})
         console.warn(this.profileForm.value);
     }
 }

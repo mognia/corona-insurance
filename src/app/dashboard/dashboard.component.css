@@ -1,0 +1,12 @@
+.profile-form,response-form{
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    transition: .5s ease-out all;
+}
+.show{
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    transition: .5s ease-in all;
+}
