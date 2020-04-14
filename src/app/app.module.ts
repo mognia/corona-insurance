@@ -27,6 +27,7 @@ import {EthereumModule} from './ethereum/ethereum.module';
     AppComponent,
     AdminLayoutComponent,
 
+
   ],
   providers: [],
   bootstrap: [AppComponent]

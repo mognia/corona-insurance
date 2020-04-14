@@ -1,8 +1,8 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import * as Chartist from 'chartist';
-import {EthService} from '../ethereum/eth.service';
+import {EthService} from '../../ethereum/eth.service';
 import Web3 from 'web3';
-import {WEB3} from '../ethereum/tokens';
+import {WEB3} from '../../ethereum/tokens';
 import {FormControl, FormGroup} from '@angular/forms';
 
 @Component({
