@@ -1,72 +1,40 @@
 <div class="main-content">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card card-profile">
-                    <div class="card-body">
-                        <h6 class="card-category text-gray">First Name</h6>
-                        <h4 class="card-title">Last Name</h4>
-                        <p class="card-description">
-                            Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
-                        </p>
-                        <div class="star-box card">
-                            <div class="cont">
-                                <div class="stars justify-content-center d-flex">
-                                    <form action="">
-                                        <input class="star star-10" id="star-10-2" type="radio" name="star"/>
-                                        <label class="star star-10" for="star-10-2"></label>
-                                        <input class="star star-9" id="star-9-2" type="radio" name="star"/>
-                                        <label class="star star-9" for="star-9-2"></label>
-                                        <input class="star star-8" id="star-8-2" type="radio" name="star"/>
-                                        <label class="star star-8" for="star-8-2"></label>
-                                        <input class="star star-7" id="star-7-2" type="radio" name="star"/>
-                                        <label class="star star-7" for="star-7-2"></label>
-                                        <input class="star star-6" id="star-6-2" type="radio" name="star"/>
-                                        <label class="star star-6" for="star-6-2"></label>
-                                        <input class="star star-5" id="star-5-2" type="radio" name="star"/>
-                                        <label class="star star-5" for="star-5-2"></label>
-                                        <input class="star star-4" id="star-4-2" type="radio" name="star"/>
-                                        <label class="star star-4" for="star-4-2"></label>
-                                        <input class="star star-3" id="star-3-2" type="radio" name="star"/>
-                                        <label class="star star-3" for="star-3-2"></label>
-                                        <input class="star star-2" id="star-2-2" type="radio" name="star"/>
-                                        <label class="star star-2" for="star-2-2"></label>
-                                        <input class="star star-1" id="star-1-2" type="radio" name="star"/>
-                                        <label class="star star-1" for="star-1-2"></label>
-                                    </form>
-                                </div>
-                            </div>
-
-                        </div>
-                        <a href="javascript:void(0)" class="btn btn-success btn-round">ثبت امتیاز</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8">
+        <div class="row justify-content-sm-center">
+            <div class="col-12 col-sm-11">
                 <div class="card">
                     <div class="card-header text-right card-header-success">
-                        <h4 class="card-title">جستجوی کاربر</h4>
-                        <p class="card-category">آی دی کیف پول کاربر مورد نظر را وارد کنید</p>
+                        <h4 class="card-title">امتیازدهی بیماران</h4>
+                        <p class="card-category">آدرس ولت بیمار مورد نظر و امتیاز مناسب را وارد کنید</p>
                     </div>
                     <div class="card-body">
-                        <form>
+                        <form [formGroup]="voteForm" (ngSubmit)="vote()" dir="rtl">
+                            <div class="row ">
 
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <label>Wallet ID</label>
-                                    <mat-form-field class="example-full-width">
-                                        <textarea matInput placeholder=""></textarea>
+                                <div class="col-md-5">
+                                    <mat-form-field class="example-full-width" dir="rtl">
+                                        <input matInput formControlName="address" placeholder="آدرس ">
                                     </mat-form-field>
-                                    <!-- <div class="form-group">
-
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
-                                            <textarea class="form-control" rows="5"></textarea>
-                                        </div>
-                                    </div> -->
+                                </div>
+                                <div class="col-md-3">
+                                    <mat-form-field class="example-full-width" dir="rtl">
+                                        <input type="number" max="100" matInput formControlName="value" placeholder="امتیاز ">
+                                    </mat-form-field>
                                 </div>
                             </div>
-                            <button mat-raised-button type="submit" class="btn btn-success pull-left">جستجو</button>
+
+                            <div class="w-100 d-flex justify-content-end">
+
+                                <button mat-raised-button type="submit" class="btn btn-success pull-right">
+                                    <div class="spinner-border text-light" *ngIf="isSubmitedForm" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                    <span>
+                                        ارسال اطلاعات
+                                    </span>
+                                </button>
+                            </div>
+
                             <div class="clearfix"></div>
                         </form>
                     </div>
