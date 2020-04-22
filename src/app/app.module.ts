@@ -11,10 +11,10 @@ import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-import {EthereumModule} from './ethereum/ethereum.module';
+import {AuthModule} from './authModule/auth.module';
 
 @NgModule({
-  imports: [EthereumModule,
+  imports: [AuthModule,
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,

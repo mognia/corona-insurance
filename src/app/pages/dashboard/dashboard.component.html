@@ -3,7 +3,6 @@
         <div class="row justify-content-sm-center">
 
 
-
             <div class="col-12 col-sm-4">
                 <div class="card  card-stats">
                     <div class="card-header card-header-success card-header-icon">
@@ -66,53 +65,93 @@
                         <p class="card-category">از صحت اطلاعات وارد شده اطمینان حاصل نمایید</p>
                     </div>
                     <div class="card-body">
-                        <form [formGroup]="profileForm" (ngSubmit)="submitProfile(responseCard)">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <mat-form-field class="example-full-width" dir="rtl">
-                                        <input matInput formControlName="firstName" placeholder="نام">
-                                    </mat-form-field>
+                        <mat-horizontal-stepper [linear]="false" #stepper>
+                            <mat-step [stepControl]="firstFormGroup">
+                                <ng-template matStepLabel>اجازه دسترسی</ng-template>
+                                <div class="col-12 text-right">
+
+                                        <p>برای اجازه دسترسی قرارداد هوشمند به توکن tether شما برای برداشت {{crnPerTether | number}} از کیف پول شما </p>
                                 </div>
-                                <div class="col-md-4">
-                                    <mat-form-field class="example-full-width" dir="rtl">
-                                        <input matInput formControlName="lastName" placeholder="نام خانوادگی">
-                                    </mat-form-field>
-                                </div>
-                                <div class="col-md-4">
-                                    <mat-form-field class="example-full-width" dir="rtl">
-                                        <input matInput formControlName="phoneNumber" placeholder="شماره موبایل">
-                                    </mat-form-field>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <mat-form-field class="example-full-width" dir="rtl">
-                                        <input matInput formControlName="nationalId" placeholder="شماره ملی">
-                                    </mat-form-field>
-                                </div>
-                                <div class="col-md-4">
-                                    <mat-form-field class="example-full-width" dir="rtl">
-                                        <input matInput formControlName="birthCertificate" placeholder="شماره شناسنامه">
-                                    </mat-form-field>
+                                <div>
+                                    <button class="btn btn-success" matStepperNext (click)="getcrn()">می پذیرم</button>
                                 </div>
 
-                            </div>
+                            </mat-step>
+                            <mat-step [stepControl]="secondFormGroup">
+                                <ng-template matStepLabel>خرید بیمه</ng-template>
+                                <div class="col-12">
+                                        <span class="d-flex">
 
-                            <div class="w-100 d-flex justify-content-end">
+                                        <p>در این مرحله با فشردن دکمه خرید برای شما توکن بیمه کرونا خریداری خواهد شد</p>
 
-                                <button mat-raised-button type="submit" class="btn btn-success pull-right">
-                                    <div class="spinner-border text-light" *ngIf="isSubmitedForm" role="status">
-                                        <span class="sr-only">Loading...</span>
+                                        </span>
+                                </div>
+                                <div>
+                                    <button class="btn btn-success" matStepperNext (click)="buyToken()">خرید</button>
+                                </div>
+                            </mat-step>
+                            <mat-step>
+                                <ng-template matStepLabel>برداشت</ng-template>
+                                <div class="col-12">
+                                        <span class="d-flex">
+
+                                        <p>اجازه دسترسی به قرارداد هوشمند برای برداشت مقدار یک توکن</p>
+
+                                        </span>
+                                </div>
+                                <div>
+                                    <button class="btn btn-success" matStepperNext (click)="approveCrn()">اجازه بده
+                                    </button>
+                                </div>
+                            </mat-step>
+                            <mat-step>
+                                <ng-template matStepLabel>ثبت</ng-template>
+                                <form [formGroup]="profileForm" (ngSubmit)="submitProfile()">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <mat-form-field class="example-full-width" dir="rtl">
+                                                <input matInput formControlName="firstName" placeholder="نام">
+                                            </mat-form-field>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <mat-form-field class="example-full-width" dir="rtl">
+                                                <input matInput formControlName="lastName" placeholder="نام خانوادگی">
+                                            </mat-form-field>
+                                        </div>
+
+
+                                        <div class="col-md-3">
+                                            <mat-form-field class="example-full-width" dir="rtl">
+                                                <input matInput formControlName="nationalNumber" placeholder="شماره ملی">
+                                            </mat-form-field>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <mat-form-field class="example-full-width" dir="rtl">
+                                                <input matInput formControlName="identityNumber"
+                                                       placeholder="شماره شناسنامه">
+                                            </mat-form-field>
+                                        </div>
+
                                     </div>
-                                    <span *ngIf="!isSubmitedForm">
 
-                                    ارسال اطلاعات
-                                    </span>
-                                </button>
-                            </div>
+                                    <div class="w-100 d-flex justify-content-end">
 
-                            <div class="clearfix"></div>
-                        </form>
+                                        <button mat-raised-button type="submit" class="btn btn-success pull-right">
+                                            <div class="spinner-border text-light" *ngIf="isSubmitedForm" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <span *ngIf="!isSubmitedForm">
+
+                                                                        ارسال اطلاعات
+                                                                        </span>
+                                        </button>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                </form>
+                            </mat-step>
+                        </mat-horizontal-stepper>
+
                     </div>
                 </div>
                 <div class="card mt-0 response-form" [class.show]="isSubmitedForm" *ngIf="isSubmitedForm">

@@ -17,5 +17,5 @@ import {EthService} from './eth.service';
     ]
 })
 
-export class EthereumModule {
+export class AuthModule {
 }

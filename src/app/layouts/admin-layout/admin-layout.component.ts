@@ -6,8 +6,8 @@ import { Router, NavigationEnd, NavigationStart } from '@angular/router';
 import { Subscription } from 'rxjs/Subscription';
 import PerfectScrollbar from 'perfect-scrollbar';
 import * as $ from 'jquery';
-import {EthService} from '../../ethereum/eth.service';
-import {WEB3} from '../../ethereum/tokens';
+import {EthService} from '../../authModule/eth.service';
+import {WEB3} from '../../authModule/tokens';
 import Web3 from 'web3';
 
 @Component({

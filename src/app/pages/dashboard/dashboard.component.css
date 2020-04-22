@@ -10,3 +10,6 @@
     opacity: 1;
     transition: .5s ease-in all;
 }
+::ng-deep .mat-step-header .mat-step-icon-selected{
+    background: #4caf50;
+}
