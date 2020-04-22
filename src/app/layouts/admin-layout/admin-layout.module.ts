@@ -16,7 +16,7 @@ import {ClaimComponent} from '../../pages/claim/claim.component';
 import {RateUsersComponent} from '../../pages/rate-users/rate-users.component';
 import {AdminPanelComponent} from '../../pages/admin-panel/admin-panel.component';
 import { ContractDataComponent } from '../../pages/contract-data/contract-data.component';
-
+import { PayDemandComponent } from '../../pages/pay-demand/pay-demand.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -36,6 +36,7 @@ import { ContractDataComponent } from '../../pages/contract-data/contract-data.c
     ClaimComponent,
     RateUsersComponent,
     AdminPanelComponent,
+    PayDemandComponent,
     ContractDataComponent
   ]
 })

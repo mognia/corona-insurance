@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import {AuthModule} from './authModule/auth.module';
 
+
 @NgModule({
   imports: [AuthModule,
     BrowserAnimationsModule,
