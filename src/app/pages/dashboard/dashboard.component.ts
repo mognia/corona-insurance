@@ -23,7 +23,6 @@ export class DashboardComponent implements OnInit {
       getCrnPerTetherValue().then(function (val) {
         that.crnPerTether = val;
         })
-        console.log(this.crnPerTether.toLocaleString())
 
     }
 

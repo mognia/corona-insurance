@@ -1,0 +1,165 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row justify-content-sm-center">
+
+
+            <div class="col-12 col-sm-4">
+                <div class="card  card-stats">
+                    <div class="card-header card-header-success card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">monetization_on</i>
+                        </div>
+                        <p class="card-category">موجودی کانترکت</p>
+                        <h3 class="card-title" dir="rtl">
+                            {{ContractBalance | number}}
+                        </h3>
+                    </div>
+                    <div class="card-footer" dir="rtl">
+                        <div class="stats text-right">
+                            <small class="mb-0">این مقدار موجودی داخل این کانترکن می باشد</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4">
+                <div class="card  card-stats">
+                    <div class="card-header card-header-success card-header-icon">
+                        <div class="card-icon ">
+                            <i class="material-icons">money_off</i>
+                        </div>
+                        <p class="card-category">برداشت</p>
+                        <button class="btn btn-warning" (click)="withdarw()">برداشت پول</button>
+                    </div>
+                    <div class="card-footer my-1" dir="rtl">
+                        <div class="stats text-right">
+                            <small class="mb-0">با زدن دکمه برداشت موجودی کانترکت به ولت شما واریز خواهد شد</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row justify-content-sm-center">
+            <div class="col-12 col-sm-11">
+                <div class="card">
+                    <div class="card-header text-right card-header-success">
+                        <h4 class="card-title">افزودن پزشک جدید</h4>
+                        <p class="card-category">آی دی کیف پول پزشک مورد نظر را وارد کنید</p>
+                    </div>
+                    <div class="card-body">
+                        <form [formGroup]="addDocForm" (ngSubmit)="addDoc()" dir="rtl">
+                            <div class="row ">
+                                <div class="col-md-5">
+                                    <mat-form-field class="example-full-width" dir="rtl">
+                                        <input matInput formControlName="name" placeholder="نام">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-5">
+                                    <mat-form-field class="example-full-width" dir="rtl">
+                                        <input matInput formControlName="address" placeholder="آدرس ولت">
+                                    </mat-form-field>
+                                </div>
+
+                            </div>
+
+                            <div class="w-100 d-flex justify-content-end">
+
+                                <button mat-raised-button type="submit" class="btn btn-success pull-right">
+                                    <div class="spinner-border text-light" *ngIf="isSubmitedForm" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                    <span *ngIf="!isSubmitedForm">
+
+                                                                        ارسال اطلاعات
+                                                                        </span>
+                                </button>
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row justify-content-sm-center">
+            <div class="col-12 col-sm-11">
+                <div class="card">
+                    <div class="card-header text-right card-header-success">
+                        <h4 class="card-title">افزودن آدرس stable Coin</h4>
+                        <p class="card-category">آدرس stable coin را وارد کنید</p>
+                    </div>
+                    <div class="card-body">
+                        <form [formGroup]="addStableCoin" (ngSubmit)="addCoin()" dir="rtl">
+                            <div class="row ">
+
+                                <div class="col-md-5">
+                                    <mat-form-field class="example-full-width" dir="rtl">
+                                        <input matInput formControlName="address" placeholder="آدرس ">
+                                    </mat-form-field>
+                                </div>
+
+                            </div>
+
+                            <div class="w-100 d-flex justify-content-end">
+
+                                <button mat-raised-button type="submit" class="btn btn-success pull-right">
+                                    <div class="spinner-border text-light" *ngIf="isSubmitedForm" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                    <span *ngIf="!isSubmitedForm">
+
+                                                                        ارسال اطلاعات
+                                                                        </span>
+                                </button>
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row justify-content-sm-center">
+            <div class="col-12 col-sm-11">
+                <div class="card">
+                    <div class="card-header text-right card-header-success">
+                        <h4 class="card-title">به روز رسانی قیمت هر توکن</h4>
+                        <p class="card-category">مقدار جدید جهت به روز رسانی را وارد کنید</p>
+                    </div>
+                    <div class="card-body">
+                        <form [formGroup]="setCrnForm" (ngSubmit)="setCrn()" dir="rtl">
+                            <div class="row ">
+
+                                <div class="col-md-5">
+                                    <mat-form-field class="example-full-width" dir="rtl">
+                                        <input matInput formControlName="value" placeholder="قیمت ">
+                                    </mat-form-field>
+                                </div>
+
+                            </div>
+
+                            <div class="w-100 d-flex justify-content-end">
+
+                                <button mat-raised-button type="submit" class="btn btn-success pull-right">
+                                    <div class="spinner-border text-light" *ngIf="isSubmitedForm" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                    <span *ngIf="!isSubmitedForm">
+
+                                                                        ارسال اطلاعات
+                                                                        </span>
+                                </button>
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

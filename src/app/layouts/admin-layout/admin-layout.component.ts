@@ -1,14 +1,11 @@
 import {Component, OnInit, ViewChild, AfterViewInit, Inject} from '@angular/core';
 import { Location, LocationStrategy, PathLocationStrategy, PopStateEvent } from '@angular/common';
 import 'rxjs/add/operator/filter';
-import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { Router, NavigationEnd, NavigationStart } from '@angular/router';
 import { Subscription } from 'rxjs/Subscription';
 import PerfectScrollbar from 'perfect-scrollbar';
 import * as $ from 'jquery';
-import {EthService} from '../../authModule/eth.service';
-import {WEB3} from '../../authModule/tokens';
-import Web3 from 'web3';
+
 
 @Component({
   selector: 'app-admin-layout',

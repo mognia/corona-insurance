@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09500642-58f7-4da5-9872-c8c78b6d5908" name="Default Changelist" comment="added rate user">
+    <list default="true" id="09500642-58f7-4da5-9872-c8c78b6d5908" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ethereum/eth.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/authModule/eth.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ethereum/eth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/authModule/eth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ethereum/ethereum.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/authModule/auth.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ethereum/tokens.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/authModule/tokens.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/dashboard/dashboard.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/dashboard/dashboard.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/dashboard/dashboard.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.routing.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/add-doctor/add-doctor.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/admin-panel/admin-panel.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/add-doctor/add-doctor.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/admin-panel/admin-panel.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/add-doctor/add-doctor.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/admin-panel/admin-panel.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/add-doctor/add-doctor.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/admin-panel/admin-panel.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/dashboard/dashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/dashboard/dashboard.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="corona-insurance" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -100,7 +98,7 @@
       <workItem from="1586703607185" duration="848000" />
       <workItem from="1586704671310" duration="4347000" />
       <workItem from="1586718769313" duration="29500000" />
-      <workItem from="1587444138020" duration="14171000" />
+      <workItem from="1587444138020" duration="18233000" />
     </task>
     <task id="LOCAL-00001" summary="finish dashboard web view">
       <created>1586774626717</created>
@@ -130,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586854948379</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="dashboard connected">
+      <created>1587548004490</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587548004490</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,33 +147,34 @@
     <MESSAGE value="added font and some style fix" />
     <MESSAGE value="added claim page" />
     <MESSAGE value="added rate user" />
-    <option name="LAST_COMMIT_MESSAGE" value="added rate user" />
+    <MESSAGE value="dashboard connected" />
+    <option name="LAST_COMMIT_MESSAGE" value="dashboard connected" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="88" key="#Inspections" timestamp="1587451391768">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="88" key="#Inspections/0.0.1600.860@0.0.1600.860" timestamp="1587451391768" />
-    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1587547476603">
+    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1587552763927">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1587547476603" />
-    <state width="1579" height="174" key="GridCell.Tab.0.bottom" timestamp="1587547714667">
+    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1587552763927" />
+    <state width="1579" height="127" key="GridCell.Tab.0.bottom" timestamp="1587552765627">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1579" height="174" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1587547714667" />
-    <state width="1579" height="174" key="GridCell.Tab.0.center" timestamp="1587547714667">
+    <state width="1579" height="127" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1587552765627" />
+    <state width="1579" height="127" key="GridCell.Tab.0.center" timestamp="1587552765627">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1579" height="174" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1587547714667" />
-    <state width="1579" height="174" key="GridCell.Tab.0.left" timestamp="1587547714666">
+    <state width="1579" height="127" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1587552765627" />
+    <state width="1579" height="127" key="GridCell.Tab.0.left" timestamp="1587552765627">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1579" height="174" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1587547714666" />
-    <state width="1579" height="174" key="GridCell.Tab.0.right" timestamp="1587547714667">
+    <state width="1579" height="127" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1587552765627" />
+    <state width="1579" height="127" key="GridCell.Tab.0.right" timestamp="1587552765627">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1579" height="174" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1587547714667" />
+    <state width="1579" height="127" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1587552765627" />
     <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1586854949968">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -181,9 +187,13 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="1063" y="363" width="348" height="298" key="org.angular.cli.generate/0.0.1600.860@0.0.1600.860" timestamp="1586850527767" />
-    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1586774122089">
+    <state x="456" y="195" key="run.anything.popup" timestamp="1587551567442">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1586774122089" />
+    <state x="456" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1587551567442" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1587549181502">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1587549181502" />
   </component>
 </project>

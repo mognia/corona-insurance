@@ -16,7 +16,7 @@ export const ROUTES: RouteInfo[] = [
     {path: '/dashboard', title: 'ثبت و خرید', icon: 'dashboard', class: ''},
     {path: '/claim', title: 'مطالبه', icon: 'call_received', class: ''},
     {path: '/rate', title: 'امتیازدهی کاربران', icon: 'how_to_reg', class: ''},
-    {path: '/add-doc', title: 'افزودن متخصص', icon: 'add_circle_outline', class: ''},
+    {path: '/admin-panel', title: 'پنل ادمین', icon: 'add_circle_outline', class: ''},
 ];
 
 @Component({

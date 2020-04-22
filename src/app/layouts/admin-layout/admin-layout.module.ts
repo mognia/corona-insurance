@@ -14,7 +14,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSelectModule} from '@angular/material/select';
 import {ClaimComponent} from '../../pages/claim/claim.component';
 import {RateUsersComponent} from '../../pages/rate-users/rate-users.component';
-import {AddDoctorComponent} from '../../pages/add-doctor/add-doctor.component';
+import {AdminPanelComponent} from '../../pages/admin-panel/admin-panel.component';
 
 @NgModule({
   imports: [
@@ -34,7 +34,7 @@ import {AddDoctorComponent} from '../../pages/add-doctor/add-doctor.component';
     DashboardComponent,
     ClaimComponent,
     RateUsersComponent,
-    AddDoctorComponent,
+    AdminPanelComponent,
   ]
 })
 
