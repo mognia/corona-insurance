@@ -26,8 +26,6 @@ import {AuthModule} from './authModule/auth.module';
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-
-
   ],
   providers: [],
   bootstrap: [AppComponent]

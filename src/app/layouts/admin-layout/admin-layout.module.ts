@@ -15,6 +15,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {ClaimComponent} from '../../pages/claim/claim.component';
 import {RateUsersComponent} from '../../pages/rate-users/rate-users.component';
 import {AdminPanelComponent} from '../../pages/admin-panel/admin-panel.component';
+import { ContractDataComponent } from '../../pages/contract-data/contract-data.component';
 
 @NgModule({
   imports: [
@@ -35,6 +36,7 @@ import {AdminPanelComponent} from '../../pages/admin-panel/admin-panel.component
     ClaimComponent,
     RateUsersComponent,
     AdminPanelComponent,
+    ContractDataComponent
   ]
 })
 

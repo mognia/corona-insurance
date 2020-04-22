@@ -17,6 +17,7 @@ export const ROUTES: RouteInfo[] = [
     {path: '/claim', title: 'مطالبه', icon: 'call_received', class: ''},
     {path: '/rate', title: 'امتیازدهی کاربران', icon: 'how_to_reg', class: ''},
     {path: '/admin-panel', title: 'پنل ادمین', icon: 'add_circle_outline', class: ''},
+    {path: '/contract-data' , title: 'اطلاعات قرارداد هوشمند' , icon: 'info', class: ''}
 ];
 
 @Component({

@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09500642-58f7-4da5-9872-c8c78b6d5908" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/pages/contract-data/contract-data.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/contract-data/contract-data.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/contract-data/contract-data.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/contract-data/contract-data.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/admin-panel/admin-panel.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/admin-panel/admin-panel.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/rate-users/rate-users.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/rate-users/rate-users.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/rate-users/rate-users.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/rate-users/rate-users.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.routing.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +97,7 @@
       <workItem from="1586703607185" duration="848000" />
       <workItem from="1586704671310" duration="4347000" />
       <workItem from="1586718769313" duration="29500000" />
-      <workItem from="1587444138020" duration="19637000" />
+      <workItem from="1587444138020" duration="21623000" />
     </task>
     <task id="LOCAL-00001" summary="finish dashboard web view">
       <created>1586774626717</created>
@@ -136,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587552784499</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="vote user connected">
+      <created>1587554189295</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587554189295</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,17 +162,18 @@
     <MESSAGE value="added rate user" />
     <MESSAGE value="dashboard connected" />
     <MESSAGE value="admin panel connected" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin panel connected" />
+    <MESSAGE value="vote user connected" />
+    <option name="LAST_COMMIT_MESSAGE" value="vote user connected" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="88" key="#Inspections" timestamp="1587451391768">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="88" key="#Inspections/0.0.1600.860@0.0.1600.860" timestamp="1587451391768" />
-    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1587552782761">
+    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1587554187838">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1587552782761" />
+    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1587554187838" />
     <state width="1579" height="127" key="GridCell.Tab.0.bottom" timestamp="1587552765627">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -185,10 +198,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="447" y="44" width="760" height="771" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1600.860@0.0.1600.860" timestamp="1586773079242" />
-    <state x="1063" y="363" width="348" height="298" key="org.angular.cli.generate" timestamp="1586850527767">
+    <state x="1063" y="363" width="348" height="298" key="org.angular.cli.generate" timestamp="1587554254529">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="1063" y="363" width="348" height="298" key="org.angular.cli.generate/0.0.1600.860@0.0.1600.860" timestamp="1586850527767" />
+    <state x="1063" y="363" width="348" height="298" key="org.angular.cli.generate/0.0.1600.860@0.0.1600.860" timestamp="1587554254529" />
     <state x="456" y="195" key="run.anything.popup" timestamp="1587551567442">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
