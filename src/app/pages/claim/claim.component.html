@@ -8,33 +8,34 @@
                     <h4 class="card-title">ثبت درخواست مطالبه</h4>
                     <p class="card-category">لطفا شرایط را با دقت مطالعه نمایید</p>
                 </div>
-                <div class="w-100 d-flex m-2 flex-column  card-body">
+                <div class="w-100 d-flex m-2 flex-column  card-body" dir="rtl">
                     <p class="text-right">
-                        برای دریافت حق بیمه ابتدا مدارک پزشکی خود را از طریق لینک زیر ارسال کنید تا پزشکان ما در اسرع وقت نسبت به صحت اطلاعات شما امتیاز داده و درصورت دریافت حداکثر امتیاز تا میزان سقف تعهد برای شما وارید خواهد شد
+                        برای دریافت حق بیمه ابتدا آدرس کیف پول خودرا وارد کنید سپس مدارک پزشکی خود را به ایمیل ما ارسال کنید تا بررسی شود
                     </p>
+                    <p class="text-right">
+                          ایمیل ما : email@mail.com
+                    </p>
+                    <form [formGroup]="claimForm" (ngSubmit)="claim()" dir="rtl">
+                        <div class="row ">
 
-                    <ul class="text-right" dir="rtl">
-                        <h2>
-                            <small>
-                                مدارک مورد نیاز
-                            </small>
-                        </h2>
-                        <li>
-                            مدرک اول
-                        </li>
-                        <li>
-                           مدرک دوم
-                        </li>
-                        <li>
-                            مدرک سوم
-                        </li>
-                        <li>
-                            مدرک اختیاری
-                        </li>
-                    </ul>
-                    <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
-                    <button type="button" class="btn btn-success btn-lg btn-block">ارسال ایمیل</button>
-                    </a>
+                            <div class="col-md-5">
+                                <mat-form-field class="example-full-width" dir="rtl">
+                                    <input matInput formControlName="address" placeholder="آدرس کیف پول شما ">
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+                        <div class="w-100 d-flex justify-content-end">
+
+                            <button mat-raised-button type="submit" class="btn btn-success pull-right">
+                                <span>
+                                        ارسال آدرس من
+                                    </span>
+                            </button>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </form>
                 </div>
             </div>
             </div>

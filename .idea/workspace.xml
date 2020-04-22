@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09500642-58f7-4da5-9872-c8c78b6d5908" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/pages/contract-data/contract-data.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/contract-data/contract-data.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/contract-data/contract-data.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/contract-data/contract-data.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.routing.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/claim/claim.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/claim/claim.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/claim/claim.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/claim/claim.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +91,7 @@
       <workItem from="1586703607185" duration="848000" />
       <workItem from="1586704671310" duration="4347000" />
       <workItem from="1586718769313" duration="29500000" />
-      <workItem from="1587444138020" duration="21623000" />
+      <workItem from="1587444138020" duration="22265000" />
     </task>
     <task id="LOCAL-00001" summary="finish dashboard web view">
       <created>1586774626717</created>
@@ -148,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587554189295</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="contarct info conected">
+      <created>1587556309702</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1587556309702</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,17 +164,18 @@
     <MESSAGE value="dashboard connected" />
     <MESSAGE value="admin panel connected" />
     <MESSAGE value="vote user connected" />
-    <option name="LAST_COMMIT_MESSAGE" value="vote user connected" />
+    <MESSAGE value="contarct info conected" />
+    <option name="LAST_COMMIT_MESSAGE" value="contarct info conected" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="88" key="#Inspections" timestamp="1587451391768">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="88" key="#Inspections/0.0.1600.860@0.0.1600.860" timestamp="1587451391768" />
-    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1587554187838">
+    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1587556307736">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1587554187838" />
+    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1587556307736" />
     <state width="1579" height="127" key="GridCell.Tab.0.bottom" timestamp="1587552765627">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -190,10 +192,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1579" height="127" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1587552765627" />
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1587553302105">
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1587556313307">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1587553302105" />
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1587556313307" />
     <state x="447" y="44" width="760" height="771" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586773079242">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
