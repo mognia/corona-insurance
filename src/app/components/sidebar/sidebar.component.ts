@@ -28,7 +28,7 @@ export const ROUTES: RouteInfo[] = [
 })
 export class SidebarComponent implements OnInit {
     menuItems: any[];
-    walletId: string;
+    @Input() walletId: string;
 
     constructor(public ethService: EthService,
                 @Inject(WEB3) private web3: any = Web3) {

@@ -65,8 +65,8 @@
                         <p class="card-category">از صحت اطلاعات وارد شده اطمینان حاصل نمایید</p>
                     </div>
                     <div class="card-body">
-                        <mat-horizontal-stepper [linear]="false" #stepper>
-                            <mat-step [stepControl]="firstFormGroup">
+                        <mat-horizontal-stepper [linear]="true" #stepper>
+                            <mat-step >
                                 <ng-template matStepLabel>اجازه دسترسی</ng-template>
                                 <div class="col-12 text-right">
 
@@ -77,33 +77,8 @@
                                 </div>
 
                             </mat-step>
-                            <mat-step [stepControl]="secondFormGroup">
-                                <ng-template matStepLabel>خرید بیمه</ng-template>
-                                <div class="col-12">
-                                        <span class="d-flex">
 
-                                        <p>در این مرحله با فشردن دکمه خرید برای شما توکن بیمه کرونا خریداری خواهد شد</p>
 
-                                        </span>
-                                </div>
-                                <div>
-                                    <button class="btn btn-success" matStepperNext (click)="buyToken()">خرید</button>
-                                </div>
-                            </mat-step>
-                            <mat-step>
-                                <ng-template matStepLabel>برداشت</ng-template>
-                                <div class="col-12">
-                                        <span class="d-flex">
-
-                                        <p>اجازه دسترسی به قرارداد هوشمند برای برداشت مقدار یک توکن</p>
-
-                                        </span>
-                                </div>
-                                <div>
-                                    <button class="btn btn-success" matStepperNext (click)="approveCrn()">اجازه بده
-                                    </button>
-                                </div>
-                            </mat-step>
                             <mat-step>
                                 <ng-template matStepLabel>ثبت</ng-template>
                                 <form [formGroup]="profileForm" (ngSubmit)="submitProfile()">

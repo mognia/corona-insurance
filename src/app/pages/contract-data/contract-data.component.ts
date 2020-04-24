@@ -35,9 +35,9 @@ export class ContractDataComponent implements OnInit {
     getSuspendTimeValue().then(function (val) {
       that.suspendTimeValue = val;
     });
-    getBalanceValue().then(function (val) {
-      that.balanceValue = val;
-    });
+    // getBalanceValue().then(function (val) {
+    //   that.balanceValue = val;
+    // });
   }
 
 }

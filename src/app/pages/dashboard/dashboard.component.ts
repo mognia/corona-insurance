@@ -1,6 +1,6 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {approveStableCoin, getCrnPerTetherValue , buyToken , approveCrnToken , register} from 'corona-interface/ethereum'
+import {approveStableCoin, getCrnPerTetherValue , buyToken , approveCrnToken , registerWithStableCoin} from 'corona-interface/ethereum'
 @Component({
     selector: 'app-dashboard',
     templateUrl: './dashboard.component.html',
@@ -29,15 +29,10 @@ export class DashboardComponent implements OnInit {
     getcrn() {
         approveStableCoin()
     }
-    buyToken(){
-        buyToken()
-    }
-    approveCrn(){
-        approveCrnToken()
-    }
+
     submitProfile(){
         if (this.profileForm.valid){
-        register(this.profileForm.value)
+            registerWithStableCoin(this.profileForm.value)
 
         }
     }

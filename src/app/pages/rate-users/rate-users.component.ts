@@ -10,6 +10,8 @@ export class RateUsersComponent implements OnInit {
   voteForm = new FormGroup({
     value: new FormControl('', [Validators.max(100), Validators.required]),
     address: new FormControl('', [ Validators.required]),
+    nationalNumber: new FormControl('', [ Validators.required]),
+    identityNumber: new FormControl('', [ Validators.required]),
   });
   constructor() { }
 

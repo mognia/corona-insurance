@@ -11,9 +11,19 @@
                         <form [formGroup]="voteForm" (ngSubmit)="vote()" dir="rtl">
                             <div class="row ">
 
-                                <div class="col-md-5">
+                                <div class="col-md-3">
                                     <mat-form-field class="example-full-width" dir="rtl">
                                         <input matInput formControlName="address" placeholder="آدرس ">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-3">
+                                    <mat-form-field class="example-full-width" dir="rtl">
+                                        <input matInput formControlName="nationalNumber" placeholder="کدملی ">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-3">
+                                    <mat-form-field class="example-full-width" dir="rtl">
+                                        <input matInput formControlName="identityNumber" placeholder="شماره شناسنامه ">
                                     </mat-form-field>
                                 </div>
                                 <div class="col-md-3">
@@ -26,9 +36,6 @@
                             <div class="w-100 d-flex justify-content-end">
 
                                 <button mat-raised-button type="submit" class="btn btn-success pull-right">
-                                    <div class="spinner-border text-light" *ngIf="isSubmitedForm" role="status">
-                                        <span class="sr-only">Loading...</span>
-                                    </div>
                                     <span>
                                         ارسال اطلاعات
                                     </span>

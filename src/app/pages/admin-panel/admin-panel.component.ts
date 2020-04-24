@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {addDoctor , setStableCoin , setCrnPerTether , getContractBalance , withdraw} from 'corona-interface/ethereum'
+import {addDoctor , setStableCoin , setCrnPerTether , getContractBalance , withdraw , setCrnToken, setOwner, setSuspendTime} from 'corona-interface/ethereum'
 declare var $: any;
 @Component({
   selector: 'app-add-doctor',
@@ -17,6 +17,15 @@ export class AdminPanelComponent implements OnInit {
   });
   setCrnForm = new FormGroup({
     value: new FormControl('', [Validators.required]),
+  });
+  addCrnForm = new FormGroup({
+    address: new FormControl('', [Validators.required]),
+  });
+  addAdminForm = new FormGroup({
+    address: new FormControl('', [Validators.required]),
+  });
+  setSuspendTimeForm = new FormGroup({
+    time: new FormControl('', [Validators.required]),
   });
   ContractBalance;
   constructor() { }
@@ -40,6 +49,21 @@ export class AdminPanelComponent implements OnInit {
   setCrn() {
     if (this.setCrnForm.valid) {
       setCrnPerTether(this.setCrnForm.value)
+    }
+  }
+  addCrn() {
+    if (this.addCrnForm.valid) {
+      setCrnToken(this.addCrnForm.value)
+    }
+  }
+  addAdmin() {
+    if (this.addAdminForm.valid) {
+      setOwner(this.addAdminForm.value)
+    }
+  }
+  setSuspendTime() {
+    if (this.setSuspendTimeForm.valid) {
+      setSuspendTime(this.setSuspendTimeForm.value)
     }
   }
   withdarw() {

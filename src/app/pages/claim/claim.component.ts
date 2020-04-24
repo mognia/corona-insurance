@@ -8,7 +8,8 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 })
 export class ClaimComponent implements OnInit {
   claimForm = new FormGroup({
-    address: new FormControl('', [ Validators.required]),
+    nationalNumber: new FormControl('', [ Validators.required]),
+    identityNumber: new FormControl('', [ Validators.required])
   });
   constructor() { }
 
