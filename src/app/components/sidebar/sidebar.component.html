@@ -26,7 +26,7 @@
 <div class="sidebar-wrapper">
 
     <ul class="nav">
-        <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
+        <li [ngClass]="{'d-none' : menuItem.class ==='admin'&&!isAdmin|| menuItem.class ==='doctor'&&!isDoc }" routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
             <a class="nav-link text-right" [routerLink]="[menuItem.path]">
                 <i class="material-icons">{{menuItem.icon}}</i>
                 <p>{{menuItem.title}}</p>
