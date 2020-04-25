@@ -3,7 +3,7 @@
         <div class="row justify-content-sm-center">
 
 
-            <div class="col-12 col-sm-4">
+            <div class="col-12 col-sm-6">
                 <div class="card  card-stats">
                     <div class="card-header card-header-success card-header-icon">
                         <div class="card-icon">
@@ -21,7 +21,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-4">
+            <div class="col-12 col-sm-6">
                 <div class="card  card-stats">
                     <div class="card-header card-header-success card-header-icon">
                         <div class="card-icon ">
@@ -43,7 +43,7 @@
 
         </div>
         <div class="row justify-content-sm-center">
-            <div class="col-12 col-sm-11">
+            <div class="col-12 ">
 
                 <div class="card my-3" dir="rtl">
                     <div class="card-body text-right">
@@ -57,15 +57,15 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-sm-center">
-            <div class="col-sm-11 col-12">
+        <div class="row flex-sm-row-reverse ">
+            <div class="col-sm-6 col-12">
                 <div class="card profile-form" [class.show]="!isSubmitedForm" dir="rtl">
                     <div class="card-header text-right card-header-success">
                         <h4 class="card-title">ارسال مشخصات</h4>
                         <p class="card-category">از صحت اطلاعات وارد شده اطمینان حاصل نمایید</p>
                     </div>
                     <div class="card-body">
-                        <mat-horizontal-stepper [linear]="true" #stepper>
+                        <mat-horizontal-stepper class="p-0" [linear]="true" #stepper>
                             <mat-step >
                                 <ng-template matStepLabel>اجازه دسترسی</ng-template>
                                 <div class="col-12 text-right">
@@ -117,8 +117,8 @@
                                             </div>
                                             <span *ngIf="!isSubmitedForm">
 
-                                                                        ارسال اطلاعات
-                                                                        </span>
+                                                ارسال اطلاعات
+                                            </span>
                                         </button>
                                     </div>
 
@@ -129,21 +129,65 @@
 
                     </div>
                 </div>
-                <div class="card mt-0 response-form" [class.show]="isSubmitedForm" *ngIf="isSubmitedForm">
+
+            </div>
+            <div class="col-sm-6 col-12">
+
+                <div class="card ">
                     <div class="card-header text-right card-header-success">
-                        <h4 class="card-title">پاسخ درخواست</h4>
-                        <p class="card-category">تا دریافت پاسخ شکیبا باشید</p>
+                        <h4 class="card-title">دریافت اطلاعات ثبت نام</h4>
+                        <p class="card-category">لطفا موارد خواسته شده را وارد کنید</p>
                     </div>
-                    <div class="w-100 d-flex m-2 flex-column align-items-center justify-content-center card-body">
-                        <h6>لطفا کمی صبر کنید</h6>
-                        <small>درحال دریافت پاسخ از بلاکچین</small>
-                        <div class="spinner-grow my-3 text-success" role="status">
-                            <span class="sr-only">Loading...</span>
+                    <div class="w-100 d-flex m-2 flex-column  card-body" dir="rtl">
+                        <div class="row px-4 flex-column" *ngIf="isRegistrant">
+                            <div class="d-flex border-bottom py-2">
+                                <p class="text-success px-2">آدرس قرارداد هوشمند : </p>
+                                <p>{{registrandData.address}}</p>
+                            </div>
+                            <div class="d-flex border-bottom py-2">
+                                <p class="text-success px-2">Hash  : </p>
+                                <p>{{registrandData.hash}}</p>
+                            </div>
+                            <div class="d-flex border-bottom py-2">
+                                <p class="text-success px-2">وضعیت ثبت نام  : </p>
+                                <p *ngIf="registrandData.registered">ثبت نام شده</p>
+                                <p *ngIf="!registrandData.registered">ثبت نام نشده</p>
+                            </div>
                         </div>
+                        <form *ngIf="!isRegistrant" [formGroup]="getRegistrantForm" (ngSubmit)="getRegistrant()" dir="rtl">
+                            <div class="row ">
+
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width" dir="rtl">
+                                        <input matInput formControlName="address" placeholder="آدرس کیف پول ">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width" dir="rtl">
+                                        <input matInput formControlName="identityNumber" placeholder="شماره شناسنامه ">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width" dir="rtl">
+                                        <input matInput formControlName="nationalNumber" placeholder="کد ملی ">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+
+                            <div class="w-100 mt-sm-5 d-flex justify-content-end">
+
+                                <button mat-raised-button type="submit" class="btn btn-success pull-right">
+                                <span>
+                                        دریافت مشخصات
+                                    </span>
+                                </button>
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </form>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
