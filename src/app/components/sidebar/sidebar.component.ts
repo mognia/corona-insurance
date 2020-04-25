@@ -42,6 +42,7 @@ export class SidebarComponent implements OnInit {
 
         });
       isDoctor().then(function (val) {
+          console.log(val)
         that.isDoc = val;
       })
         // @ts-ignore

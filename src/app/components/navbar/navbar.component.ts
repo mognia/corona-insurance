@@ -2,7 +2,7 @@ import {Component, OnInit, ElementRef, Input} from '@angular/core';
 import {ROUTES} from '../sidebar/sidebar.component';
 import {Location, LocationStrategy, PathLocationStrategy} from '@angular/common';
 import {Router} from '@angular/router';
-
+import { getBalanceValue} from 'corona-interface/ethereum'
 @Component({
     selector: 'app-navbar',
     templateUrl: './navbar.component.html',
@@ -16,13 +16,17 @@ export class NavbarComponent implements OnInit {
     mobile_menu_visible: any = 0;
     private toggleButton: any;
     private sidebarVisible: boolean;
-
+    balanceValue
     constructor(location: Location, private element: ElementRef, private router: Router) {
         this.location = location;
         this.sidebarVisible = false;
     }
 
     ngOnInit() {
+        const that = this
+        // getBalanceValue().then(function (val) {
+        // //   that.balanceValue = val;
+        // // });
         this.listTitles = ROUTES.filter(listTitle => listTitle);
         const navbar: HTMLElement = this.element.nativeElement;
         this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];

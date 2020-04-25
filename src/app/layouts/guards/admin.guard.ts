@@ -6,12 +6,14 @@ import {isAdmin} from 'corona-interface/ethereum'
   providedIn: 'root'
 })
 export class AdminGuard implements CanActivate {
+  isAdmin;
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): any {
-    isAdmin().then(function (val) {
-      return val
+    return  isAdmin().then(function (val) {
+
+      return val;
     });
   }
-
 }
+

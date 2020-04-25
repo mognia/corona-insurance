@@ -2,14 +2,126 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09500642-58f7-4da5-9872-c8c78b6d5908" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/layouts/guards/admin.guard.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/layouts/guards/admin.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/layouts/guards/doctor.guard.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/layouts/guards/doctor.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/3rdpartylicenses.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/5.e9404c7477d42b7c7739.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/css/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/font/Yekan.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/font/iransansMedium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/font/iranyekanwebregular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/angular.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/angular2-logo-red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/angular2-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/apple-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/coronavirus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/cover.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/faces/marc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/gears.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/html.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/mask.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/new_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/sidebar-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/sidebar-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/sidebar-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/sidebar-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/tim_80x80.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_alerts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_angular-modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_cards.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_checkboxes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_example-pages.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_fixed-plugin.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_footers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_images.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_input-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_misc.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_popover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_popups.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_radios.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_responsive.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_ripples.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_sidebar-and-main-panel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_tabs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_togglebutton.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/cards/_card-plain.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/cards/_card-profile.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/cards/_card-stats.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/mixins/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/mixins/_animations.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/mixins/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/mixins/_chartist.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/mixins/_colored-shadows.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/mixins/_drawer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/mixins/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/mixins/_hover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/mixins/_layout.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/mixins/_navbar-colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/mixins/_navs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/mixins/_sidebar-color.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/mixins/_transparency.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/mixins/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/mixins/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/mixins/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/mixins/_vendor-prefixes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/plugins/_animate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/plugins/_chartist.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/plugins/_perfect-scrollbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_body.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_bootstrap-material-design-base.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_bootstrap-material-design.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_brand.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_code.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_colors-map.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_custom-forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_drawer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_layout.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_menu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_modals.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_shadow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_snackbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_spacing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_state.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/core/variables/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/scss/material-dashboard.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/main.53ce747da2dda24a1ed1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/polyfills-es5.f27809569c4fb0e10c69.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/polyfills.1cd1ce1be5ac8e3ea944.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/runtime.9841d4a3b80255869ea6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/scripts.c2bf7824690281864773.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/styles.53c50882dcde7088e225.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/navbar/navbar.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.routing.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/guards/admin.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/guards/admin.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/guards/doctor.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/guards/doctor.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/contract-data/contract-data.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/contract-data/contract-data.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +194,21 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -97,7 +224,7 @@
       <workItem from="1586704671310" duration="4347000" />
       <workItem from="1586718769313" duration="29500000" />
       <workItem from="1587444138020" duration="24287000" />
-      <workItem from="1587736132002" duration="7604000" />
+      <workItem from="1587736132002" duration="15380000" />
     </task>
     <task id="LOCAL-00001" summary="finish dashboard web view">
       <created>1586774626717</created>
@@ -176,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587742332339</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added route guard">
+      <created>1587744859627</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1587744859627</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,37 +329,38 @@
     <MESSAGE value="calim connected" />
     <MESSAGE value="pay conected" />
     <MESSAGE value="added latest changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added latest changes" />
+    <MESSAGE value="added route guard" />
+    <option name="LAST_COMMIT_MESSAGE" value="added route guard" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="88" key="#Inspections" timestamp="1587451391768">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="88" key="#Inspections/0.0.1600.860@0.0.1600.860" timestamp="1587451391768" />
-    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1587742329457">
+    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1587744858290">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1587742329457" />
-    <state width="1579" height="127" key="GridCell.Tab.0.bottom" timestamp="1587743199160">
+    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1587744858290" />
+    <state width="776" height="127" key="GridCell.Tab.0.bottom" timestamp="1587820830533">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1579" height="127" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1587743199160" />
-    <state width="1579" height="127" key="GridCell.Tab.0.center" timestamp="1587743199160">
+    <state width="776" height="127" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1587820830533" />
+    <state width="776" height="127" key="GridCell.Tab.0.center" timestamp="1587820830532">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1579" height="127" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1587743199160" />
-    <state width="1579" height="127" key="GridCell.Tab.0.left" timestamp="1587743199160">
+    <state width="776" height="127" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1587820830532" />
+    <state width="776" height="127" key="GridCell.Tab.0.left" timestamp="1587820830532">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1579" height="127" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1587743199160" />
-    <state width="1579" height="127" key="GridCell.Tab.0.right" timestamp="1587743199160">
+    <state width="776" height="127" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1587820830532" />
+    <state width="776" height="127" key="GridCell.Tab.0.right" timestamp="1587820830533">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1579" height="127" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1587743199160" />
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1587742344112">
+    <state width="776" height="127" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1587820830533" />
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2" timestamp="1587744881357">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1587742344112" />
+    <state x="392" y="162" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1587744881356" />
     <state x="447" y="44" width="760" height="771" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586773079242">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

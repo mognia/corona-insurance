@@ -12,7 +12,7 @@ export const AdminLayoutRoutes: Routes = [
 
     { path: 'dashboard',      component: DashboardComponent },
     {path: 'claim' , component: ClaimComponent},
-    {path: 'rate' , component: RateUsersComponent , canActivate: [DoctorGuard, AdminGuard]},
+    {path: 'rate' , component: RateUsersComponent , canActivate: [DoctorGuard ]},
     {path: 'admin-panel' , component: AdminPanelComponent, canActivate: [AdminGuard]},
     {path: 'contract-data' , component: ContractDataComponent},
     {path: 'pay-demand', component: PayDemandComponent}

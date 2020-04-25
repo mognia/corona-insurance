@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {getContractAddress , getStableCoinAddress , getCrnAddress ,  getCrnPerTetherValue , getMaxPaymentValue , getSuspendTimeValue, getBalanceValue} from 'corona-interface/ethereum'
+import {getContractAddress , getStableCoinAddress , getCrnAddress ,  getCrnPerTetherValue , getMaxPaymentValue , getSuspendTimeValue} from 'corona-interface/ethereum'
 @Component({
   selector: 'app-contract-data',
   templateUrl: './contract-data.component.html',
@@ -35,9 +35,7 @@ export class ContractDataComponent implements OnInit {
     getSuspendTimeValue().then(function (val) {
       that.suspendTimeValue = val;
     });
-    // getBalanceValue().then(function (val) {
-    //   that.balanceValue = val;
-    // });
+
   }
 
 }
