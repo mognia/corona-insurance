@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="09500642-58f7-4da5-9872-c8c78b6d5908" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/dashboard/dashboard.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/i18n/fa.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/i18n/fa.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/i18n/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/i18n/en.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +106,7 @@
       <workItem from="1586704671310" duration="4347000" />
       <workItem from="1586718769313" duration="29500000" />
       <workItem from="1587444138020" duration="24287000" />
-      <workItem from="1587736132002" duration="31152000" />
+      <workItem from="1587736132002" duration="31687000" />
     </task>
     <task id="LOCAL-00001" summary="finish dashboard web view">
       <created>1586774626717</created>
@@ -215,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588340980531</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="dashboard multi lang added">
+      <created>1588344813758</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1588344813758</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,17 +243,18 @@
     <MESSAGE value="bug fixes" />
     <MESSAGE value="added registrant and claimer" />
     <MESSAGE value="add translate service and side bar multi lang" />
-    <option name="LAST_COMMIT_MESSAGE" value="add translate service and side bar multi lang" />
+    <MESSAGE value="dashboard multi lang added" />
+    <option name="LAST_COMMIT_MESSAGE" value="dashboard multi lang added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="88" key="#Inspections" timestamp="1587451391768">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="88" key="#Inspections/0.0.1600.860@0.0.1600.860" timestamp="1587451391768" />
-    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1588340978149">
+    <state x="425" y="24" key="CommitChangelistDialog2" timestamp="1588344812416">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1588340978149" />
+    <state x="425" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1588344812416" />
     <state width="1579" height="127" key="GridCell.Tab.0.bottom" timestamp="1588338493068">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

@@ -4,5 +4,43 @@
   "claim" : "claim" ,
   "contract-data" : "contract data" ,
   "pay-demand" : "pay demand",
-  "your-address" : ":address "
+  "your-address" : ":address ",
+  "registration-price" :{
+    "title" : "registration price",
+    "describe" : "This Price is For Record your Token"
+  },
+  "max-payment" : {
+    "title" : "max payment",
+    "describe" : "If you get Required Rating From Our Doctors"
+  },
+  "submit-token" : {
+    "title" : "submit token request",
+    "describe" : "   To get Promise to access your wallet please confirm access"
+  },
+  "buy-token-form" : {
+    "title" : "Send Details",
+    "describe" : "Make Sure Enter Valid Data",
+    "step1" : {
+      "title" : "Access Promise",
+      "describe1" : "To get Promise to contarct to get  ",
+      "describe2" : " theter from your wallet"
+    },
+    "step2": {
+      "title" : "Send Record"
+    }
+  },
+  "accept" : "accept",
+  "firstName" : "first Name",
+  "lastName" : "last Name",
+  "nationalNumber" : "national Number",
+  "identityNumber" : "identity Number",
+  "wallet-address" : "wallet address ",
+  "get-details" : "get details",
+  "get-registrand-data" : {
+    "title" : "get registrand data",
+    "describe" : "Please Fill All Fields",
+    "registration-status" : ": registration-status ",
+    "registered" : "registered",
+    "not-registered" : "not registered"
+  }
 }
