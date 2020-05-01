@@ -4,17 +4,17 @@
             <div class="col-12 col-sm-11">
                 <div class="card">
                     <div class="card-header text-right card-header-success">
-                        <h4 class="card-title">اطلاعات قرارداد</h4>
-                        <p class="card-category">در این بخش سایر اطلاعات مورد نیاز قرارداد هوشمند قرار دارد</p>
+                        <h4 class="card-title">{{'contact-data.title' | translate}}</h4>
+                        <p class="card-category">{{'contact-data.describe' | translate}}</p>
                     </div>
                     <div class="card-body" dir="rtl">
                         <div class="row px-2 flex-column">
                             <div class="d-flex border-bottom py-2">
-                                <p class="text-success">آدرس قرارداد هوشمند : </p>
+                                <p class="text-success">{{'contact-data.contract-address' | translate}}</p>
                                 <p>{{contactAddress}}</p>
                             </div>
                             <div class="d-flex border-bottom py-2">
-                                <p class="text-success">آدرس Stable Coin : </p>
+                                <p class="text-success">{{'contact-data.stable-coin-address' | translate}}</p>
                                 <p>{{stableCoinAddress}}</p>
                             </div>
 <!--                            <div class="d-flex border-bottom py-2">-->
@@ -22,15 +22,15 @@
 <!--                                <p>{{crnAddress}}</p>-->
 <!--                            </div>-->
                             <div class="d-flex border-bottom py-2">
-                                <p class="text-success">هزینه ثبت نام : </p>
+                                <p class="text-success">{{'contact-data.registration-fee' | translate}} </p>
                                 <p>{{crnPerTether }}</p>
                             </div>
                             <div class="d-flex border-bottom py-2">
-                                <p class="text-success">حداکثر حق پرداختی : </p>
+                                <p class="text-success">{{'contact-data.max-payable' | translate}} </p>
                                 <p>{{maxPaymentValue }}</p>
                             </div>
                             <div class="d-flex  py-2">
-                                <p class="text-success">زمان انتظار برای پرداخت حق بیمه : </p>
+                                <p class="text-success">{{'contact-data.suspend-time' | translate}}</p>
                                 <p>{{suspendTimeValue}}</p>
                             </div>
 <!--                            <div class="d-flex  py-2">-->

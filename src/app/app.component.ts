@@ -10,7 +10,7 @@ import {TranslateService} from '@ngx-translate/core';
 export class AppComponent {
   constructor(translate: TranslateService) {
     translate.addLangs(['en', 'fa'])
-    translate.setDefaultLang('en');
+    translate.setDefaultLang('fa');
     translate.use('fa');
   }
 }

@@ -61,5 +61,14 @@
     "describe2" : "To Claim Your Insurance Please Give Us Your Wallet ID then Send Us Your Medical Docs To Our Email"
   },
   "our-email" : " Our Email :",
-  "send-my-address" : "send my address"
+  "send-my-address" : "send my address",
+  "contact-data" : {
+    "title" : "Contact Data",
+    "describe" : "In this section, other information required by the smart contract is available",
+    "contract-address" : "contract-address :  ",
+    "registration-fee" : "registration-fee : ",
+    "stable-coin-address" : " Stable Coin Address :  ",
+    "max-payable" : " Max Payable : ",
+    "suspend-time": "Waiting time to pay premiums : "
+  }
 }
