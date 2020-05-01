@@ -5,32 +5,32 @@
 
                 <div class="card ">
                     <div class="card-header text-right card-header-success">
-                        <h4 class="card-title">دریافت اطلاعات مطالبه</h4>
-                        <p class="card-category">لطفا موارد خواسته شده را وارد کنید</p>
+                        <h4 class="card-title">{{'get-claim-data.title' | translate}}</h4>
+                        <p class="card-category">{{'get-claim-data.describe' | translate}}</p>
                     </div>
                     <div class="w-100 d-flex m-2 flex-column  card-body" dir="rtl">
                         <div class="row px-4 flex-column" *ngIf="isClaimer">
                             <div class="d-flex border-bottom py-2">
-                                <p class="text-success px-2">آدرس شما : </p>
+                                <p class="text-success px-2">{{'your-address' | translate}}</p>
                                 <p>{{claimerData.address}}</p>
                             </div>
                             <div class="d-flex border-bottom py-2">
-                                <p class="text-success px-2">سررسید  : </p>
+                                <p class="text-success px-2">{{'dead-line' | translate}}</p>
                                 <p>{{claimerData.deadLine}}</p>
                             </div>
                             <div class="d-flex border-bottom py-2">
-                                <p class="text-success px-2">امتیاز کسب شده  : </p>
+                                <p class="text-success px-2">{{'given-rate' | translate}}</p>
                                 <p>{{claimerData.vote}}</p>
                             </div>
                             <div class="d-flex border-bottom py-2">
-                                <p class="text-success px-2">وضعیت مطالبه  : </p>
-                                <p *ngIf="claimerData.claimed">مطالبه شده</p>
-                                <p *ngIf="!claimerData.claimed">مطالبه نشده</p>
+                                <p class="text-success px-2">{{'get-claim-data.claim-status' | translate}}</p>
+                                <p *ngIf="claimerData.claimed">{{'get-claim-data.claimed' | translate}}</p>
+                                <p class="text-danger" *ngIf="!claimerData.claimed">{{'get-claim-data.not-claimed' | translate}}</p>
                             </div>
                             <div class="d-flex  py-2">
-                                <p class="text-success px-2">وضعیت پرداخت  : </p>
-                                <p *ngIf="claimerData.claimed">پرداخت شده</p>
-                                <p *ngIf="!claimerData.claimed">پرداخت نشده</p>
+                                <p class="text-success px-2">{{'get-claim-data.pay-status' | translate}}</p>
+                                <p  *ngIf="claimerData.paid">{{'get-claim-data.payed' | translate}}</p>
+                                <p class="text-danger" *ngIf="!claimerData.paid">{{'get-claim-data.not-payed' | translate}}</p>
                             </div>
                         </div>
                         <form *ngIf="!isClaimer" [formGroup]="getClaimerForm" (ngSubmit)="getClaimer()" dir="rtl">
@@ -38,17 +38,17 @@
 
                                 <div class="col-md-4">
                                     <mat-form-field class="example-full-width" dir="rtl">
-                                        <input matInput formControlName="address" placeholder="آدرس کیف پول ">
+                                        <input matInput formControlName="address" placeholder="{{'wallet-address'| translate}} ">
                                     </mat-form-field>
                                 </div>
                                 <div class="col-md-4">
                                     <mat-form-field class="example-full-width" dir="rtl">
-                                        <input matInput formControlName="identityNumber" placeholder="شماره شناسنامه ">
+                                        <input matInput formControlName="identityNumber" placeholder="{{'identityNumber'| translate}} ">
                                     </mat-form-field>
                                 </div>
                                 <div class="col-md-4">
                                     <mat-form-field class="example-full-width" dir="rtl">
-                                        <input matInput formControlName="nationalNumber" placeholder="کد ملی ">
+                                        <input matInput formControlName="nationalNumber" placeholder="{{'nationalNumber'| translate}} ">
                                     </mat-form-field>
                                 </div>
                             </div>
@@ -57,7 +57,7 @@
 
                                 <button mat-raised-button type="submit" class="btn btn-success pull-right">
                                 <span>
-                                        دریافت مشخصات
+                                        {{'get-details'| translate}}
                                     </span>
                                 </button>
                             </div>
@@ -71,27 +71,27 @@
 
             <div class="card ">
                 <div class="card-header text-right card-header-success">
-                    <h4 class="card-title">ثبت درخواست مطالبه</h4>
-                    <p class="card-category">لطفا شرایط را با دقت مطالعه نمایید</p>
+                    <h4 class="card-title">{{'submit-new-claim.title' | translate}}</h4>
+                    <p class="card-category">{{'submit-new-claim.describe' | translate}}</p>
                 </div>
                 <div class="w-100 d-flex m-2 flex-column  card-body" dir="rtl">
                     <p class="text-right">
-                        برای دریافت حق بیمه ابتدا آدرس کیف پول خودرا وارد کنید سپس مدارک پزشکی خود را به ایمیل ما ارسال کنید تا بررسی شود
+                        {{'submit-new-claim.describe2' | translate}}
                     </p>
                     <p class="text-right">
-                          ایمیل ما : email@mail.com
+                        {{'our-email' | translate}} email@mail.com
                     </p>
                     <form [formGroup]="claimForm" (ngSubmit)="claim()" dir="rtl">
                         <div class="row ">
 
                             <div class="col-md-5">
                                 <mat-form-field class="example-full-width" dir="rtl">
-                                    <input matInput formControlName="identityNumber" placeholder="شماره شناسنامه ">
+                                    <input matInput formControlName="identityNumber" placeholder="{{'identityNumber' | translate}}">
                                 </mat-form-field>
                             </div>
                             <div class="col-md-5">
                                 <mat-form-field class="example-full-width" dir="rtl">
-                                    <input matInput formControlName="nationalNumber" placeholder="کد ملی ">
+                                    <input matInput formControlName="nationalNumber" placeholder="{{'nationalNumber' | translate}} ">
                                 </mat-form-field>
                             </div>
                         </div>
@@ -100,7 +100,7 @@
 
                             <button mat-raised-button type="submit" class="btn btn-success pull-right">
                                 <span>
-                                        ارسال آدرس من
+                                        {{'send-my-address' | translate}}
                                     </span>
                             </button>
                         </div>

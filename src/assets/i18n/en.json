@@ -42,5 +42,24 @@
     "registration-status" : ": registration-status ",
     "registered" : "registered",
     "not-registered" : "not registered"
-  }
+  },
+  "get-claim-data" : {
+    "title" : "get claim data",
+    "describe" : "Please Fill All Fields",
+    "claim-status" : ": claim-status",
+    "claimed" : "Claimed",
+    "not-claimed" : "Not Claimed",
+    "pay-status" : ": payment status ",
+    "payed" : "payed",
+    "not-payed" : "not payed"
+  },
+  "dead-line" : ": Dead Line",
+  "given-rate" : ": Given Rate ",
+  "submit-new-claim" : {
+    "title" : "Submit New Claim Request",
+    "describe" : "Please read the terms carefully",
+    "describe2" : "To Claim Your Insurance Please Give Us Your Wallet ID then Send Us Your Medical Docs To Our Email"
+  },
+  "our-email" : " Our Email :",
+  "send-my-address" : "send my address"
 }
