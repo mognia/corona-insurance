@@ -5,8 +5,8 @@
 
                 <div class="card ">
                     <div class="card-header text-right card-header-success">
-                        <h4 class="card-title">برداشت وجه</h4>
-                        <p class="card-category">پس از ثبت درخواست برداشت مبلغ تا حداکثر بییست و چهار ساعت آینده واریز خواهد شد</p>
+                        <h4 class="card-title">{{'pay-demand-component.title' | translate}}</h4>
+                        <p class="card-category">{{'pay-demand-component.describe' | translate}}</p>
                     </div>
                     <div class="w-100 d-flex m-2 flex-column  card-body" dir="rtl">
                         <form [formGroup]="payDemandForm" (ngSubmit)="pay()" dir="rtl">
@@ -14,12 +14,12 @@
 
                                 <div class="col-md-5">
                                     <mat-form-field class="example-full-width" dir="rtl">
-                                        <input matInput formControlName="identityNumber" placeholder="شماره شناسنامه ">
+                                        <input matInput formControlName="identityNumber" placeholder="{{'identityNumber' | translate}} ">
                                     </mat-form-field>
                                 </div>
                                 <div class="col-md-5">
                                     <mat-form-field class="example-full-width" dir="rtl">
-                                        <input matInput formControlName="nationalNumber" placeholder="کد ملی ">
+                                        <input matInput formControlName="nationalNumber" placeholder="{{'nationalNumber' | translate}} ">
                                     </mat-form-field>
                                 </div>
                             </div>
@@ -28,7 +28,7 @@
 
                                 <button mat-raised-button type="submit" class="btn btn-success pull-right">
                                 <span>
-                                        برداشت وجه
+                                        {{'pay-demand-component.title' | translate}}
                                     </span>
                                 </button>
                             </div>

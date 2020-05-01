@@ -70,5 +70,9 @@
     "stable-coin-address" : "آدرس Stable Coin : ",
     "max-payable" : "حداکثر حق پرداختی : ",
     "suspend-time": "زمان انتظار برای پرداخت حق بیمه :"
+  },
+  "pay-demand-component" : {
+    "title" : "برداشت وجه",
+    "describe" : "پس از ثبت درخواست برداشت مبلغ تا حداکثر بییست و چهار ساعت آینده واریز خواهد شد"
   }
 }
