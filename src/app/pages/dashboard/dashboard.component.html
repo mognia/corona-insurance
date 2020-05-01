@@ -10,13 +10,12 @@
                             <i class="material-icons">add_shopping_cart</i>
                         </div>
                         <p class="card-category">هزینه ثبت نام</p>
-                        <h3 class="card-title" dir="rtl">10,000
-                            <small>تومان</small>
+                        <h3 class="card-title" dir="rtl">{{crnPerTether }}
                         </h3>
                     </div>
                     <div class="card-footer" dir="rtl">
                         <div class="stats text-right">
-                            <small class="mb-0">این هزینه بابت ثبت اطلاعات شما روی بلاکچین است</small>
+                            <small class="mb-0">این هزینه بابت ثبت ثبت نام بیمه است</small>
                         </div>
                     </div>
                 </div>
@@ -28,8 +27,8 @@
                             <i class="material-icons">local_hospital</i>
                         </div>
                         <p class="card-category">حداکثر بیمه پرداختی</p>
-                        <h3 class="card-title" dir="rtl">10,000,000
-                            <small>تومان</small>
+                        <h3 class="card-title" dir="rtl">
+                            {{maxPaymentValue}}
                         </h3>
                     </div>
                     <div class="card-footer" dir="rtl">
@@ -48,10 +47,8 @@
                 <div class="card my-3" dir="rtl">
                     <div class="card-body text-right">
                         <h5>ثبت درخواست توکن</h5>
-                        <p>با وارد کردن اطلاعات خود و سپس فشردن دکمه ثبت درخواست شما برای خرید توکن و حق بیمه ارسال
-                            خواهد شد و حداکثر تا 1 دقیقه بعد نتیجه در همین صفحه اعلام خواهد شد لطفا تا دریافت نتیجه این
-                            صفحه را نبندید
-
+                        <p>
+                            ابتدا به قرارداد هوشمند اجازه ی برداشت از کیف پول خود را داده و سپس با وارد کردن اطلاعات و فشردن دکمه ثبت درخواست ثبت نام خود را انجام دهید
                         </p>
                     </div>
                 </div>
@@ -68,9 +65,10 @@
                         <mat-horizontal-stepper class="p-0" [linear]="true" #stepper>
                             <mat-step >
                                 <ng-template matStepLabel>اجازه دسترسی</ng-template>
-                                <div class="col-12 text-right">
+                                <div class="col-12 text-right d-flex">
 
-                                        <p>برای اجازه دسترسی قرارداد هوشمند به توکن tether شما برای برداشت {{crnPerTether | number}} از کیف پول شما </p>
+                                        <p>برای اجازه دسترسی قرارداد هوشمند به توکن tether شما برای برداشت {{crnPerTether }}  از کیف پول شما دکمه زیر را فشار دهید  </p>
+                                    <p></p>
                                 </div>
                                 <div>
                                     <button class="btn btn-success" matStepperNext (click)="getcrn()">می پذیرم</button>
@@ -141,7 +139,7 @@
                     <div class="w-100 d-flex m-2 flex-column  card-body" dir="rtl">
                         <div class="row px-4 flex-column" *ngIf="isRegistrant">
                             <div class="d-flex border-bottom py-2">
-                                <p class="text-success px-2">آدرس قرارداد هوشمند : </p>
+                                <p class="text-success px-2">آدرس شما : </p>
                                 <p>{{registrandData.address}}</p>
                             </div>
                             <div class="d-flex border-bottom py-2">

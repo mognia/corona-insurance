@@ -12,6 +12,13 @@ import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import {AuthModule} from './authModule/auth.module';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {HttpClient , HttpClientModule} from '@angular/common/http';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 
 @NgModule({
@@ -19,10 +26,18 @@ import {AuthModule} from './authModule/auth.module';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     HttpModule,
     ComponentsModule,
     RouterModule,
     AppRoutingModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader, // exported factory function needed for AoT compilation
+        deps: [HttpClient]
+      }
+    })
   ],
   declarations: [
     AppComponent,

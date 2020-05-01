@@ -1,6 +1,6 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {approveStableCoin, getCrnPerTetherValue , getRegistrant , approveCrnToken , registerWithStableCoin} from 'corona-interface/ethereum'
+import {approveStableCoin, getCrnPerTetherValue , getRegistrant , getMaxPaymentValue , registerWithStableCoin} from 'corona-interface/ethereum'
 import {log} from 'util';
 @Component({
     selector: 'app-dashboard',
@@ -21,6 +21,7 @@ export class DashboardComponent implements OnInit {
     });
     isSubmitedForm = false;
     crnPerTether;
+    maxPaymentValue;
     isRegistrant = false;
     registrandData;
     constructor() {
@@ -31,7 +32,9 @@ export class DashboardComponent implements OnInit {
       getCrnPerTetherValue().then(function (val) {
         that.crnPerTether = val;
         })
-
+        getMaxPaymentValue().then(function (val) {
+            that.maxPaymentValue = val;
+        });
     }
 
     getcrn() {

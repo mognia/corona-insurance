@@ -157,6 +157,43 @@
             <div class="col-12 col-sm-11">
                 <div class="card">
                     <div class="card-header text-right card-header-success">
+                        <h4 class="card-title">به روز رسانی حداکثر حق پرداختی</h4>
+                        <p class="card-category">مقدار جدید جهت به روز رسانی را وارد کنید</p>
+                    </div>
+                    <div class="card-body">
+                        <form [formGroup]="setMaxPaymentForm" (ngSubmit)="setMaxPayment()" dir="rtl">
+                            <div class="row ">
+
+                                <div class="col-md-5">
+                                    <mat-form-field class="example-full-width" dir="rtl">
+                                        <input matInput formControlName="value" placeholder="حداکثر حق پرداختی ">
+                                    </mat-form-field>
+                                </div>
+
+                            </div>
+
+                            <div class="w-100 d-flex justify-content-end">
+
+                                <button mat-raised-button type="submit" class="btn btn-success pull-right">
+
+                                    <span>
+
+                                        ارسال اطلاعات
+                                    </span>
+                                </button>
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row justify-content-sm-center">
+            <div class="col-12 col-sm-11">
+                <div class="card">
+                    <div class="card-header text-right card-header-success">
                         <h4 class="card-title">اضافه کردن آدرس توکن بیمه</h4>
                         <p class="card-category">آدرس جدید را وارد کنید</p>
                     </div>

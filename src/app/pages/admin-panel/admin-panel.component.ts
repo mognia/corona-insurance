@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {addDoctor , setStableCoin , setCrnPerTether , getContractBalance , withdraw , setCrnToken, setOwner, setSuspendTime} from 'corona-interface/ethereum'
+import {addDoctor , setMaxPayment, setStableCoin , setCrnPerTether , getContractBalance , withdraw , setCrnToken, setOwner, setSuspendTime} from 'corona-interface/ethereum'
 declare var $: any;
 @Component({
   selector: 'app-add-doctor',
@@ -16,6 +16,9 @@ export class AdminPanelComponent implements OnInit {
     address: new FormControl('', [Validators.required]),
   });
   setCrnForm = new FormGroup({
+    value: new FormControl('', [Validators.required]),
+  });
+  setMaxPaymentForm = new FormGroup({
     value: new FormControl('', [Validators.required]),
   });
   addCrnForm = new FormGroup({
@@ -54,6 +57,11 @@ export class AdminPanelComponent implements OnInit {
   addCrn() {
     if (this.addCrnForm.valid) {
       setCrnToken(this.addCrnForm.value)
+    }
+  }
+  setMaxPayment(){
+    if (this.setMaxPaymentForm.valid){
+      setMaxPayment(this.setMaxPaymentForm.value)
     }
   }
   addAdmin() {
