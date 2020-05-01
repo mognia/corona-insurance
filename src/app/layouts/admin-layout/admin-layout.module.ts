@@ -17,20 +17,22 @@ import {RateUsersComponent} from '../../pages/rate-users/rate-users.component';
 import {AdminPanelComponent} from '../../pages/admin-panel/admin-panel.component';
 import { ContractDataComponent } from '../../pages/contract-data/contract-data.component';
 import { PayDemandComponent } from '../../pages/pay-demand/pay-demand.component';
+import {TranslateModule} from '@ngx-translate/core';
 @NgModule({
-  imports: [
-    CommonModule,
-    RouterModule.forChild(AdminLayoutRoutes),
-    FormsModule,
-    ReactiveFormsModule,
-    MatButtonModule,
-    MatRippleModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatSelectModule,
-    MatStepperModule,
-    MatTooltipModule,
-  ],
+    imports: [
+        CommonModule,
+        RouterModule.forChild(AdminLayoutRoutes),
+        FormsModule,
+        ReactiveFormsModule,
+        MatButtonModule,
+        MatRippleModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatSelectModule,
+        MatStepperModule,
+        MatTooltipModule,
+        TranslateModule,
+    ],
   declarations: [
     DashboardComponent,
     ClaimComponent,
